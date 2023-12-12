@@ -18,3 +18,16 @@ function myCallback(element) {
 }
 console.log(newArr);
 
+// Создание колбэк функции стрелочным способом
+const arr = [1, 4, -32, "-5", 64, "orange", 743, "number"];
+
+const newArr = arr.filter((element) => {
+    if (typeof element === "string") {
+        return true;
+    } else {
+        return false;
+    }
+});
+
+
+console.log(newArr);

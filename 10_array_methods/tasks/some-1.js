@@ -9,8 +9,9 @@
 // true
 
 
-const arr = [1, 45, "43", 4, 6, 8];
-const newElem = arr.some(myCallback);
+
+const arr1 = [1, 45, "43", 4, 6, 8];
+const newElem1 = arr1.some(myCallback);
 
 function myCallback(element) {
     if (typeof element === "string") {
@@ -19,17 +20,11 @@ function myCallback(element) {
         return false;
     }
 }
-console.log(newElem);
+console.log(newElem1);
 
 
-const arr = [1, 45, 43, 4, 6, 8];
-const newElem = arr.some(myCallback);
+const arr2 = [1, 45, 43, 4, 6, 8];
+const newElem2 = arr2.some(myCallback);
 
-function myCallback(element) {
-    if (typeof element === "string") {
-        return true;
-    } else {
-        return false;
-    }
-}
-console.log(newElem);
+
+console.log(newElem2);

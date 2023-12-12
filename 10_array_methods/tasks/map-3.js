@@ -15,4 +15,12 @@ function myCallback(element) {
 }
 console.log(newArr);
 
+//Решение с помощью стрелочной функции
+
+const arr = [[1, 2, 3], ["apple", "orange"], [34, 5346, 321, 1], ["cat", "dog", "piggy"]];
+const newArr = arr.map((element) => {
+    return element.length;
+})
+console.log(newArr);
+
 

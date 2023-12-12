@@ -14,5 +14,19 @@ function myCallback(element) {
 }
 console.log(newArr);
 
-  //output
-  //[1, 4, -5]
+//output
+//[1, 4, -5]
+//   Создание колбэк функции стрелочным способом
+
+const arr = [1, 4, -32, -5, 64, 743];
+
+const newArr = arr.filter((element) => {
+    if (element > -10 && element < 10) {
+        return true;
+    } else {
+        return false;
+    }
+});
+
+console.log(newArr);
+

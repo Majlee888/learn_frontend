@@ -19,3 +19,15 @@ function myCallback(element) {
 
 console.log(newArr);
 
+// Стрелочный способ создания колбэкфункции
+
+const arr = [1, 4, -32, 5, -64, 743];
+const newArr = arr.filter((element) => {
+    if (element > 0) {
+        return true;
+    } else {
+        return false;
+    }
+});
+console.log(newArr);
+

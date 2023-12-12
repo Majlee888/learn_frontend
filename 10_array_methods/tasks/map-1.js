@@ -14,3 +14,13 @@ function myCallback(element) {
 }
 console.log(newArr);
 
+
+//Решение с помощью стрелочной функции
+
+const arr = [1, 6, 12, 45, 23, 56];
+const newArr = arr.map((element) => {
+    return element.toString();
+})
+console.log(newArr);
+
+

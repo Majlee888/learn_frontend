@@ -11,9 +11,18 @@ const newElem = arr.find(myCallback);
 
 function myCallback(element) {
     if (element % 13 === 0) {
-        return element;
+        return true;
     }
 }
 console.log(newElem);
 
+//Решение с помощью стрелочной функции
+
+const arr = [1, 5, 89, 51, 39, 90, 13, 78];
+const newElem = arr.find((element) => {
+    if (element % 13 === 0) {
+        return true;
+    }
+})
+console.log(newElem);
 

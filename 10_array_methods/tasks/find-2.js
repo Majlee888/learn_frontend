@@ -11,9 +11,19 @@ const newElem = arr.find(myCallback);
 
 function myCallback(element) {
     if (element === "find") {
-        return element;
+        return true;
     }
 }
+console.log(newElem);
+
+//Решение с помощью стрелочной функции
+
+const arr = [1, "found", 89, "apple", "fly", 90, "find", 78];
+const newElem = arr.find((element) => {
+    if (element === "find") {
+        return true;
+    }
+})
 console.log(newElem);
 
 

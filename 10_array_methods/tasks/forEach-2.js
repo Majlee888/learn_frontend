@@ -18,5 +18,15 @@ function myCallback(element) {
     console.log(`Элемент: ${element}, тип: ${typeof element}`);
 }
 
+//Решение с помощью стрелочной функции
+
+const arr = [1, "Alex", 6, "apple", "1", 12];
+
+arr.forEach((element) => {
+    console.log(`Элемент: ${element}, тип: ${typeof element}`);
+}
+)
+
+
 
 

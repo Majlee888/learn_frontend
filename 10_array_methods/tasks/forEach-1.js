@@ -8,7 +8,12 @@ arr.forEach(myCallback);
 function myCallback(element, index) {
     console.log(`Элемент = ${element}, индекс элемента = ${index}`)
 }
+// Создание колбэкфункции стрелочным способом
 
+const arr = [1, 4, 6, 56, 12, 3];
 
+arr.forEach((element, index) => {
+    console.log(`Элемент = ${element}, индекс элемента = ${index}`)
+});
 
 
