@@ -1,0 +1,88 @@
+; Любые текстовые данные в JavaScript - это строка (тип string). Строки представляют собой последовательность символов. Созданная строка является иммутабельной и не может быть изменена.
+; Документация по строкам в JavaScript: https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String
+; Создание строк
+; Есть несколько способов создания строк:
+; с помощью одинарных кавычек '
+; с помощью двойных кавычек "
+; с помощью шаблонной строки с обратным апострофом `
+; Пример:
+; const str1 = 'Hello';
+; const str2 = "Java";
+; const str2 = `Script`;
+; ​
+; Методы строк
+; У строк, как и у массивов, есть свои методы, с помощью которых можно совершать над строками различные операции. Рассмотрим некоторые из них.
+; Получение символа строки
+; const str = "Text here";
+
+; console.log(str[2]); // выведет символ 'x'
+; const sym = str[5]; // теперь sym = 'h', sym - это тоже строка
+; Длина строки
+; const str = "Text here";
+
+; console.log(str.length); // длина строки - 9 символов
+; ​
+; Метод slice
+; const str = "Text here";
+
+; // Возвращает часть строки с 0-го по 4-й символ
+; console.log(str.slice(0, 4)); // Выведет "Text"
+
+; // Возвращает часть строки с 5-го по последний символ
+; console.log(str.slice(5)); // Выведет "here"
+; ​
+; Метод indexOf
+; const str = "Text here";
+
+; // индекс буквы "e"
+; console.log(str.indexOf("e")); // Выведет 1
+
+; // индекс слова "here" в строке
+; console.log(str.indexOf("here")); // Выведет 5
+
+; // Восклицательного знака в строке нет
+; console.log(str.indexOf("!")); // Выведет -1
+; Метод replace и replaceAll
+; const str = "One Two Three";
+
+; // Заменяет первое вхождение строки "here" на "there"
+; console.log(str.replace("Two", "Four")); // Выведет "One Four Three"
+
+; // Заменяет все вхождения строки " " на ""
+; console.log(str.replaceAll(" ", "")); // Выведет "OneTwoThree"
+; ​
+; Методы toLowerCase и toUpperCase
+; const str = "Text here";
+
+; // делает все буквы "маленькими" (в нижнем регистре)
+; console.log(str.toLowerCase());  // Выведет "text here" (t - маленькая)
+
+; // делает все буквы "большими" (в верхнем регистре)
+; console.log(str.toUpperCase()); // Выведет "TEXT HERE"
+; ​
+; Метод split
+; const str = "Text here";
+
+; // Метод split делит строку по заданному разделителю и превращает в массив строк
+; const arr = str.split(" "); // arr будет ["Text", "here"]
+; const arr2 = "один, два, три".split(", "); // arr2 будет ["один", "два", "три"]
+; 8. Метод join
+; // А у массива есть метод join, который соединяет его элементы в строку через заданный разделитель
+; const colors = ["red", "blue", "green"];
+; console.log(colors.join("-")); // выведет "red-blue-green"
+; ​
+; Конкатенация строк
+; const a = "Один ";
+; const b = "Два";
+; let c = a + b; // c теперь равно "Один Два"
+; c += "!"; // c теперь равно "Один Два!"
+; ​
+; Преобразование строк
+; // можно преобразовать строку в число
+; const s = "567"; // это строка
+; const x = parseInt(s); // это число 567
+; console.log(x + 1); // выведет 568
+
+; // можно число преобразовать в строку
+; const n = 10;
+; const m = n.toString(); // m - это строка "10"
