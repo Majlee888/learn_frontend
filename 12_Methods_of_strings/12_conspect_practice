@@ -1,0 +1,115 @@
+let a = "ajdfoiokb1!";
+let b = 'hfgd;oefoirujhfh';
+let c = `jfjffgldrjjglrl`;
+
+console.log(a[7]);
+console.log(b[10]);
+console.log(c[4]);
+
+console.log(a.length);
+console.log(b.length);
+console.log(c.length);
+
+//  с помощью цикла вывести все элементы строкиможно
+
+for (let i = 0; i < a.length; i++) {
+    console.log(a[i]);
+}
+
+// цикл for Off более удобен для строк
+
+for (let char of c) {
+    console.log(char);
+}
+
+//Методы строк
+
+//Метод slice
+
+const str = "Text here";
+//возвращает часть строки с 0 по 4 символ
+console.log(str.slice(0, 4))//Выведет Text
+//возвращает часть строки с 5 по последнйи символ
+console.log(str.slicce(5));//выведет here
+
+//Метод IndexOf
+
+const str = "Text here";
+//индекс буквы "e"
+console.log(str.indexOf(e));//выведет 1
+//индекс слова "here" в строке
+console.log(str.indexOf("here"));//выведет 5
+console.log(str.indexOf("!"));//выведет -1 восклицательного знака в строке нет
+
+//Методы replace и replaceAll
+
+const str = " One Two Three Two"
+//заменяет первое вхождение строки 
+console.log(str.replace("Two", "Four"));//заменяет первое Two на For
+console.log(str.replaceAll("Two", "Four"));//заменяет все Two на For
+//заменияет все вхождения строки " " на ""
+console.log(str.replaceAll(" ", ""));//выведет OneTwoThreeTwo
+
+//Методы toLowerCase и toUperCase
+
+const str = "Text here";
+//делает все буквы в нижнем регистре
+console.log(str.toLowerCase());
+
+//делает все буквы в верхнем регистре
+console.log(str.toUpperCase());
+
+//Метод split
+
+const str = "Text here";
+//метод делит строку по заданному разделителю и превращает ее в массив строк
+const arr = str.split(" ");// arr будет ["Text", here"]
+const arr2 = "один, два, три".split(", ")//arr2 будет ["один","два","три"]
+console.log(arr);
+console.log(arr2);
+
+const str = "Text Here";
+const arrStr = str.split(" ");// ["Text", "Here"]
+const lowerStr = arrStr[0].toLowerCase();// "text"
+const newStr = lowerStr + " " + arrStr[1];
+console.log(newStr);
+
+//Метод join
+соединяет элементы в строку через заданный разделитель
+
+const colors = ["red", "blue", "green"];
+console.log(colors.join("-"));
+const numbers = [1, 2, 3];
+console.log(numbers.join(" "));
+
+const str = "red, blue, green";
+const arrStr = str.split(" ");
+const upperBlue = arrStr[1].toUpperCase();
+const newArrStr = arrStr.map((element) => {
+    if (element == "blue") {
+        return upperBlue;
+    } else {
+        return element;
+    }
+});
+const newStr = newArrStr.join(" ");
+console.log(newStr);
+
+//Конкатенация строк
+
+const a = "Один";
+const b = "Два";
+let c = a + b; // c теперь равно "Один Два"
+c += "!";// c теперь равно "Один Два!"
+// c = c + "!"
+console.log(c);
+
+//Преобразование строк
+
+const s = "567";// это строка
+const x = parseInt(s);// это число 567
+console.log(x);.. выведет 567
+//можно число преобразовать в строку
+const n = 10;
+const m = n.toString();// m - это строка "10"
+console.log(m);
